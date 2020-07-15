@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <h1>Question 2</h1>
+        <p>Difference between <b>var,let and const.</b></p>
+    </head>
+    <body>
+        <script>
+            var a,b,c;
+            a =5;
+            b =2;
+            c = a+b;
+            console.log('The value of a is '+a);
+            console.log('The value of b is '+b);
+            console.log('The value of c is '+c);
+            // var has a global scope it can be updated/reassigned and redeclared.
+            a = 9; //updated
+            console.log('The updated value of a is '+a);
+            var b=12;
+            console.log('The redeclared value of b is '+b);
+
+            {
+                let a = 10;
+                console.log('The local value of a is '+a);
+                //let has a local/block scope the variale is accessible only inside the given block. It can be updated/reassigned but not redeclared.
+                
+            }
+
+            console.log('The global value of a is still '+a);
+
+            {
+                const  ree = 1729;
+                //const has a local/block scope. A const has to be Initialised at declaration itself. A const cannot be updated or redeclared.
+                console.log('The const value of ree is '+ree);
+            }
+
+        </script>
+    </body>
+</html>

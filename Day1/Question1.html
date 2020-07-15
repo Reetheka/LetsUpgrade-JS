@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <h1>Question 1</h1>
+        <p>Explain & Explore various methods in <b>console function.</b></p>
+        <script>console.log('Hi JavaScript');</script>
+    </head>
+    <body>
+        <script>
+            // console.clear clears the console 
+            console.clear();
+            // console.log is a basic print function. Prints in the console. Strings, boolean, numbers, arrays and objects can be displayed.
+            console.log('This is a print function.');
+            // console.warn is used to log warning message in the console. It is highlighted in yellow colour.
+            console.warn('Logs a warning message in Yellow Colour.');
+            // console.error is used to log a error message in the console. It is highlighted in red colour.
+            console.error('Logs an error message in Red Colour.');
+            // console.time() and console.timeEnd() is used to know the amount of time spend by a block or a function.They take a label which must be same.eg: here it is 'abc'
+            console.time('abc');
+            function fun1()
+            {
+                console.log('fun1 is running.');
+            }
+            function fun2()
+            {
+                console.log('fun2 is running.');
+            }
+            fun1(); //calling function fun1
+            fun2(); //calling function fun2
+            console.timeEnd('abc');
+            // console.table allows us to generate a table inside a console. The input must be an array or an object which will be shown as a table.
+            var a = ["Reethu", "21", "female"];
+            console.table(a);
+            // console.group() and console.groupEnd() allows us to group contents in a separate block, which will be indented. Just like the time() and the timeEnd() they also accepts label, again of same value.
+            console.group('Ree'); 
+             console.warn('Warning!'); 
+             console.error('Error here.'); 
+             console.log('Lets Upgrade'); 
+            console.groupEnd('Ree'); 
+            console.log('------------');
+            console.log('New section'); 
+        </script>
+    </body>
+</html>

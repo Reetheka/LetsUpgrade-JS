@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Lets Upgrade</title>
+        <h1>
+        Day 2 <b>Question 2</b>
+        <p><i>String and Array methods</i></p>
+        </h1>
+    </head>
+    <body>
+        <script>
+            console.group('String Methods');
+            // String Methods
+            console.log('String Methods');
+            let abc = '  Reetheka is an aspiring Data Scientist.  ';
+            console.log(`This is the string [abc] ${abc}`);
+            //to find length of the string
+            console.log(`The length of the string is`);
+            console.log(abc.length);
+            // to make it lowercase
+            console.log(abc.toLowerCase());
+            // to make it upper case
+            console.log(abc.toUpperCase());
+            //to remove extra spaces at the beginning and at the end
+            console.log(abc.trim());
+            //to find the index of a particular Character i.e the first occurance in the string
+            console.log(abc.indexOf('D') );
+            //to find the index of the last occurance of the character
+            console.log(abc.lastIndexOf('e'));
+            // to extract a part of a string.The method takes 2 parameters: the start position, and the end position (end not included). when position is given in negative it counts from the end of the string.
+            console.log(abc.slice(0,10));
+            console.log(abc.slice(-13,-3));
+            // to spilt the given string with the given parameter and displays an array of strings
+            console.log(abc.split(' '));
+            // The replace() method replaces a specified value with another value in a string
+            console.log(abc.replace('Data','Neuro'));
+            //The charAt() method returns the character at a specified index (position) in a string
+            console.log(abc.charAt(5));       
+            //The charCodeAt() method returns the unicode of the character at a specified index in a string
+            console.log(abc.charCodeAt(5));
+            console.groupEnd('String Methods');
+        </script>
+
+    </body>
+
+</html>

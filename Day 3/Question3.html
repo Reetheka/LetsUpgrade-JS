@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <h1>Day 3<b>Question 3</b></h1>
+        <p>To Grade using the marks given by the user.<br><i>Check the console.</i></p> 
+    </head>
+    <body>
+        <script>
+            let mark = +prompt('Enter your marks','00');
+            console.log('Using If ElseIF Conditionals..');
+            if (mark>=0 && mark<41) {
+                console.log(`Your mark is ${mark} and grade is E`);
+            }
+            else if(mark>40 && mark<51){
+                console.log(`Your mark is ${mark} and grade is D`);
+            } 
+            else if(mark>50 && mark<61){
+                console.log(`Your mark is ${mark} and grade is C`);
+            } 
+            else if(mark>60 && mark<71){
+                console.log(`Your mark is ${mark} and grade is B`);
+            } 
+            else if(mark>70 && mark<81){
+                console.log(`Your mark is ${mark} and grade is B+`);
+            } 
+            else if(mark>80 && mark<91){
+                console.log(`Your mark is ${mark} and grade is A`);
+            } 
+            else if(mark>90 && mark<101){
+                console.log(`Your mark is ${mark} and grade is A+`);
+            }
+            else {
+                console.log('You have entered an INVALID MARK.')
+            } 
+
+        </script>
+    </body>
+
+</html>
